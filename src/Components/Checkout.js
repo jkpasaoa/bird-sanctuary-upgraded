@@ -6,16 +6,6 @@ function Checkout(props) {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [zipCode, setZipCode] = useState("");
-  const [checkoutBottom, setCheckoutBottom] = useState("20px");
-
-  useEffect(() => {
-    const cartElement = document.getElementById("box1");
-    if (cartElement) {
-      const cartHeight = cartElement.clientHeight;
-      const newCheckoutBottom = `${20 + cartHeight + 10}px`;
-      setCheckoutBottom(newCheckoutBottom);
-    }
-  }, [cart]);
 
   function userEntry(event) {
     event.preventDefault();
@@ -32,7 +22,7 @@ function Checkout(props) {
   };
 
   return (
-    <div className="Checkout" style={{ bottom: `${checkoutBottom}px` }}>
+    <div className="Checkout">
       <section>
         <h1>Checkout</h1>
         <form onSubmit={userEntry}>
