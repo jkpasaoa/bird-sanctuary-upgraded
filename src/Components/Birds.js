@@ -12,7 +12,7 @@ function Birds(props) {
         />
         <br />
         <button value={id} onClick={() => setCart([...cart, { name, amount }])}>
-          Adopt
+        🪺 Adopt
         </button>
       </div>
     );
