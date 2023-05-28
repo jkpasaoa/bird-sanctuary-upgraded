@@ -13,3 +13,13 @@
   padding-left: 40px;
   transition: bottom 0.3s ease;
 }
+
+.sky-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #55cfff, #042e46df);
+  z-index: -1;
+}

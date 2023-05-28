@@ -4,31 +4,36 @@ import Birdcard from "./Components/Birdcard.js";
 import Checkout from "./Components/Checkout.js";
 import birdData from "./data/birds.js";
 import bonusItems from "./data/bonusItems.js";
+import SkyLayout from "./Components/SkyLayout.js";
 
 import "./App.css";
 
 function App() {
-const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState([]);
 
   return (
-    <div className="main">
-      <section>
-        <BirdCart 
-          cart={cart} 
-          bonusItems={bonusItems} 
-          setCart={setCart}
-        />
+    <div className="app">
+      <SkyLayout /> {/* Add the SkyLayout component as the first child */}
 
-        <Checkout 
-          id="box2"
+      <div className="main">
+        <section>
+          <BirdCart
+            cart={cart}
+            bonusItems={bonusItems}
+            setCart={setCart}
+          />
+
+          <Checkout
+            id="box2"
+            setCart={setCart}
+          />
+        </section>
+        <Birdcard
           setCart={setCart}
+          cart={cart}
+          birds={birdData}
         />
-      </section>
-      <Birdcard 
-        setCart={setCart} 
-        cart={cart} 
-        birds={birdData}
-      />
+      </div>
     </div>
   );
 };
