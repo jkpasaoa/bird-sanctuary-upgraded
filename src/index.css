@@ -12,6 +12,7 @@
   border: 2px solid;
   padding-left: 40px;
   transition: bottom 0.3s ease;
+  background-image: linear-gradient(to bottom, white, #042e46df);
 }
 
 .sky-background {
@@ -20,6 +21,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #55cfff, #042e46df);
+  /* background-image: url(''); */
   z-index: -1;
 }
+
+.Cart {
+  background-image: linear-gradient(to bottom, white, #042e46df);
+  /* Add any other background styles or effects here */
+}
+
+.button {
+    background-color: #17044e;
+    color: white;
+    background-image: linear-gradient(315deg, #0e512f 0%, #5c595f 74%);
+    border: none;
+  }

@@ -40,10 +40,8 @@
 .Checkout {
     position: fixed;
     top: 15px;
-    bottom: 200px;
-}
-
-button {
-    font-size: 18px;
-    padding: 2px 20px;
+    bottom: 100px;
+    width: 14em;
+    padding-left: 8px;
+    padding-right: 8px;
 }
