@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Checkout(props) {
-  const { setCart } = props;
+  const { cart, setCart } = props;
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [zipCode, setZipCode] = useState("");
+  const [checkoutBottom, setCheckoutBottom] = useState("20px");
+
+  useEffect(() => {
+    const cartElement = document.getElementById("box1");
+    if (cartElement) {
+      const cartHeight = cartElement.clientHeight;
+      const newCheckoutBottom = `${20 + cartHeight + 10}px`;
+      setCheckoutBottom(newCheckoutBottom);
+    }
+  }, [cart]);
 
   function userEntry(event) {
     event.preventDefault();
@@ -22,7 +32,7 @@ function Checkout(props) {
   };
 
   return (
-    <div className="Checkout" id="box2">
+    <div className="Checkout" style={{ bottom: `${checkoutBottom}px` }}>
       <section>
         <h1>Checkout</h1>
         <form onSubmit={userEntry}>

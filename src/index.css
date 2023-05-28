@@ -3,3 +3,13 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
+.Checkout {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 25em;
+  border: 2px solid;
+  padding-left: 40px;
+  transition: bottom 0.3s ease;
+}

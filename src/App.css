@@ -25,17 +25,35 @@
   }
 
   .Cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     width: 25em;
     border: 2px solid;
-    margin-left: auto;
-    margin-bottom: 20px;
+    padding-left: 40px;
   }
 
-  .Checkout {
+  .Cart li {
+    margin-bottom: 8px; /* Adjust the value as needed */
+  }
+  
+  /* .Checkout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     width: 25em;
     border: 2px solid;
-    margin-left: auto;
-    margin-bottom: 20px;
+    padding-left: 40px;
+  } */
+
+  .Checkout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 25em;
+    border: 2px solid;
+    padding-left: 40px;
+    transition: bottom 0.3s ease;
   }
 
   button {
