@@ -1,7 +1,7 @@
 import React from 'react';
 import backgroundImage from '../assets/trees.jpeg';
 
-function SkyLayout() {
+function skylayout() {
   const skyBackgroundStyle = {
     position: 'fixed',
     top: 0,
@@ -20,4 +20,4 @@ function SkyLayout() {
   );
 }
 
-export default SkyLayout;
+export default skylayout;

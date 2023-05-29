@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BirdCart from "./Components/BirdCart.js";
 import Birdcard from "./Components/Birdcard.js";
 import Checkout from "./Components/Checkout.js";
-import SkyLayout from "./Components/SkyLayout.js"
+import skylayout from "./Components/skylayout.js"
 import birdData from "./data/birds.js";
 import bonusItems from "./data/bonusItems.js";
 
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="app">
-      <SkyLayout /> {/* Add the SkyLayout component as the first child */}
+      <skylayout /> {/* Add the SkyLayout component as the first child */}
 
       <div className="main">
         <section>
