@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundImage from '../assets/trees.jpeg';
+import '../index.css';
 
 function skylayout() {
   const skyBackgroundStyle = {
@@ -8,15 +9,13 @@ function skylayout() {
     left: 0,
     width: '100%',
     height: '100%',
-    // backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     zIndex: -1,
     opacity: 0.65,
   };
 
-  return (
-    <div className="sky-background" style={skyBackgroundStyle}></div>
-  );
+  return <div className="sky-background" style={skyBackgroundStyle}></div>;
 }
 
 export default skylayout;
