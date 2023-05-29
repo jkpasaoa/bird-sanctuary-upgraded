@@ -13,7 +13,7 @@ function SkyLayout() {
     zIndex: -1,
     opacity: 0.65,
   };
-  //test
+  //testing
 
   return (
     <div style={skyBackgroundStyle}></div>
