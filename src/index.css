@@ -2,18 +2,29 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+.Cart {
+  background-image: linear-gradient(to bottom, #FBFBEE, #1B393A);
+  border: 2px solid #143531;
+  position: fixed;
+  top: 15px;
+  width: 20em;
 }
 
 .Checkout {
   position: fixed;
+  top: 15px;
   bottom: 20px;
   right: 20px;
-  width: 25em;
+  width: 17em;
   border: 2px solid;
-  padding-left: 40px;
+  padding-left: 20px;
   transition: bottom 0.3s ease;
-  background-image: linear-gradient(to bottom, white, #042e46df);
+  background-image: linear-gradient(to bottom, #FBFBEE, #1B393A);
+  border: solid #143531;
 }
 
 .sky-background {
@@ -28,14 +39,9 @@
   opacity: 65%;
 }
 
-.Cart {
-  background-image: linear-gradient(to bottom, white, #042e46df);
-  /* Add any other background styles or effects here */
-}
-
 .button {
-    background-color: #17044e;
-    color: white;
-    background-image: linear-gradient(315deg, #0e512f 0%, #5c595f 74%);
-    border: none;
-  }
+  color: #FBFBEE;
+  background-color: #143531;
+  /* (315deg, #0e512f 0%, #5c595f 74%); */
+  border: solid #FBFBEE;
+}

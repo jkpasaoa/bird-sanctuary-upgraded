@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
 function BirdCart(props) {
   const { cart, setCart, bonusItems } = props;
@@ -15,7 +15,7 @@ function BirdCart(props) {
     });
     setTotal(birdCost);
   }, [areThreePlus, cart]);
-  
+
 
   let bonuses;
   if (total >= 1000) {

@@ -14,7 +14,8 @@
     align-items: center;
     width: 250px;
     padding: 8px;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
 }
 
 #section {
@@ -23,26 +24,4 @@
     align-items: flex-end;
     margin-right: 20px;
     margin-top: 20px;
-}
-
-.Cart {
-    position: fixed;
-    top: 15px;
-    /* right: 20px; */
-    width: 15em;
-    border: 2px solid;
-    padding-left: 5px;
-}
-
-.Cart li {
-    margin-bottom: 8px;
-}
-
-.Checkout {
-    position: fixed;
-    top: 15px;
-    bottom: 100px;
-    width: 14em;
-    padding-left: 8px;
-    padding-right: 8px;
 }
