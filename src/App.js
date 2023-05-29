@@ -4,7 +4,7 @@ import Birdcard from "./Components/Birdcard.js";
 import Checkout from "./Components/Checkout.js";
 import birdData from "./data/birds.js";
 import bonusItems from "./data/bonusItems.js";
-import SkyLayout from "./Components/SkyLayout.js";
+import SkyLayout from "./Components/SkyLayout.js"
 
 import "./App.css";
 
