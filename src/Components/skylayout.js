@@ -4,6 +4,7 @@ import '../index.css';
 function SkyLayout() {
   return (
     <div className="sky-background">
+      ...
     </div>
   );
 }
