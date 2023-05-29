@@ -27,7 +27,7 @@
   border: solid #143531;
 }
 
-.sky-background {
+/* .sky-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -36,8 +36,8 @@
   background-image: url(../src/assets/trees.jpeg);
   background-size: cover;
   z-index: -1;
-  opacity: 0.65; /* Adjust the opacity value as needed */
-}
+  opacity: 0.65;
+} */
 
 .button {
   color: #FBFBEE;
