@@ -1,10 +1,11 @@
-import "../index.css"
+import React from 'react';
+import '../index.css';
 
-function skylayout() {
+function SkyLayout() {
   return (
-    <div class="sky-background">
+    <div className="sky-background">
     </div>
   );
 }
 
-export default skylayout;
+export default SkyLayout;

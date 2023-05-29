@@ -36,7 +36,7 @@
   background-image: url(https://raw.githubusercontent.com/jkpasaoa/images/main/trees.jpeg);
   background-size: cover;
   z-index: -1;
-  opacity: 65%;
+  opacity: 0.65; /* Adjust the opacity value as needed */
 }
 
 .button {

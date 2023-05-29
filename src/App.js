@@ -4,7 +4,7 @@ import Birdcard from "./Components/Birdcard.js";
 import Checkout from "./Components/Checkout.js";
 import birdData from "./data/birds.js";
 import bonusItems from "./data/bonusItems.js";
-import skylayout from "./Components/skylayout.js";
+import SkyLayout from "./Components/SkyLayout.js";
 
 import "./App.css";
 
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="app">
-      <skylayout /> {/* Add the SkyLayout component as the first child */}
+      <SkyLayout /> {/* Add the SkyLayout component as the first child */}
 
       <div className="main">
         <section>
