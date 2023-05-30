@@ -1,6 +1,5 @@
 import Birds from "./Birds"
 import "./Birdcard.css"
-import { Card } from "antd";
 
 function Birdcard(props) {
   const { birds, cart, setCart } = props;
@@ -10,7 +9,7 @@ function Birdcard(props) {
       <ul className="birdcard-container">
         {birds.map(({ name, amount, id, img }) => {
           return (
-            <Card key={id} className="card">
+            <li key={id} className="card">
               <Birds
                 id={id}
                 name={name}
@@ -19,7 +18,7 @@ function Birdcard(props) {
                 cart={cart}
                 setCart={setCart}
               />
-            </Card>
+            </li>
           );
         })}
       </ul>

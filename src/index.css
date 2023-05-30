@@ -3,77 +3,44 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   overflow-x: hidden;
-  /* Hide horizontal scrollbar */
-}
-
-.Cart {
-  background-image: linear-gradient(to bottom, #FBFBEE, #1B393A);
-  border: 2px solid #143531;
-  position: fixed;
-  top: 15px;
-  width: 18em;
 }
 
 .Checkout {
   position: fixed;
-  top: 15px;
-  bottom: 250px;
-  right: 45px;
-  width: 18em;
+  bottom: 125px;
+  right: 20px;
+  width: 15em;
   border: 2px solid;
-  padding-left: 10px;
-  padding-right: 13px;
-  transition: bottom 0.3s ease;
-  background-image: linear-gradient(to bottom, #FBFBEE, #1B393A);
-  border: solid #143531;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: linear-gradient(to bottom, white, #042e46df);
 }
 
- /* .sky-background { */
-  /* position: fixed;
+.sky-background {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; */
-  /* background-image: url(https://raw.githubusercontent.com/jkpasaoa/images/main/trees.jpeg); */
-  /* background-size: cover;
+  height: 100%;
+  background-image: url(https://raw.githubusercontent.com/jkpasaoa/images/main/trees.jpeg);
+  background-size: cover;
   z-index: -1;
-  opacity: 0.65; */
-/* } */
+  opacity: 65%;
+}
 
+.Cart {
+  position: fixed;
+  top: 7px;
+  left: 5px;
+  width: 16em;
+  border: 2px solid;
+  padding-left: 30px;
+  /* padding-right: 15px; */
+  background-image: linear-gradient(to bottom, white, #042e46df);
+}
 .button {
-  color: #FBFBEE;
-  background-color: #143531;
-  /* (315deg, #0e512f 0%, #5c595f 74%); */
-  border: solid #FBFBEE;
-}
-
-/* Media queries */
-@media (max-width: 768px) {
-  .birdcard-container {
-    grid-template-columns: repeat(2, 1fr);
+    background-color: #17044e;
+    color: white;
+    background-image: linear-gradient(315deg, #0e512f 0%, #5c595f 74%);
+    border: none;
   }
-
-  .Cart {
-    width: 15em;
-  }
-
-  .Checkout {
-    width: 14em;
-  }
-}
-
-@media (max-width: 480px) {
-  .birdcard-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .Cart {
-    /* width: 12em; */
-    width: 15em;
-  }
-
-  .Checkout {
-    /* width: 12em; */
-    width: 15em;
-  }
-}

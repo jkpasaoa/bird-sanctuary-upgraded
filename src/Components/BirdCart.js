@@ -1,4 +1,3 @@
-import { Alert } from "antd";
 import { useState, useEffect } from "react";
 import "../index.css"
 
@@ -75,10 +74,7 @@ function BirdCart(props) {
           );
         })}
       </ol>
-      {total >= 1000 && (
-        <Alert message="Congratulations!" description="You have qualified for the following items:" type="success" showIcon />
-      )}
-      {/* <p>Your donations have qualified you for the following items</p> */}
+      <p>Your donations have qualified you for the following items</p>
       <div>{bonuses}</div>
     </div>
   );
