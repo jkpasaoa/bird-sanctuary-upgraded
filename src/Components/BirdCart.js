@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "../index.css"
 
 function BirdCart(props) {
   const { cart, setCart, bonusItems } = props;
