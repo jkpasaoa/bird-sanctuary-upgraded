@@ -5,17 +5,21 @@ import Checkout from "./Components/Checkout.js";
 import skylayout from "./Components/skylayout.js"
 import birdData from "./data/birds.js";
 import bonusItems from "./data/bonusItems.js";
+import 'antd/dist/reset.css';
+import { Layout } from "antd";
 
 import "./App.css";
-import "./index.css"
+import "./index.css";
+
+const { Content } = Layout;
 
 function App() {
   const [cart, setCart] = useState([]);
 
   return (
-    <div className="app">
+    <Layout>
       <skylayout />
-      <div className="main">
+      <Content className="main">
         <section>
           <BirdCart
             cart={cart}
@@ -33,8 +37,8 @@ function App() {
           cart={cart}
           birds={birdData}
         />
-      </div>
-    </div>
+      </Content>
+    </Layout>
   );
 };
 

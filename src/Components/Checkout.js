@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Form, Input, Button } from "antd";
 
 function Checkout(props) {
   const { setCart } = props;
@@ -25,11 +26,9 @@ function Checkout(props) {
     <div className="Checkout">
       <section>
         <h1>Checkout</h1>
-        <form onSubmit={userEntry}>
-          <label>
-            First Name
-            <br />
-            <input
+        <Form onFinish={userEntry}>
+          <Form.Item label="First Name">
+            <Input
               value={firstName}
               onChange={(event) => setFirstName(event.target.value)}
               id="first-name"
@@ -37,10 +36,8 @@ function Checkout(props) {
               type="text"
               placeholder="Your name..."
             />
-          </label>
-          <label>
-            Last Name
-            <br />
+          </Form.Item>
+          <Form.Item label="Last Name">
             <input
               value={lastName}
               onChange={(event) => setLastName(event.target.value)}
@@ -49,32 +46,27 @@ function Checkout(props) {
               type="text"
               placeholder="Your last name..."
             />
-          </label>
-          <label>
-            Email
-            <br />
-            <input
+          </Form.Item>
+          <Form.Item label="Email">
+            <Input
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               id="email"
               name="email"
               type="text"
             />
-          </label>
-          <label>
-            Zip Code
-            <br />
-            <input
+          </Form.Item>
+          <Form.Item label="Zip Code">
+            <Input
               value={zipCode}
               onChange={(event) => setZipCode(event.target.value)}
               id="zip"
               name="zip"
               type="number"
             />
-          </label>
-          <br />
-          <input type="submit" text="Submit" />
-        </form>
+          </Form.Item>
+          <Button type="primary" htmlType="submit">Submit</Button>
+        </Form>
       </section>
     </div>
   );
