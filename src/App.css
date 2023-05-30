@@ -25,3 +25,21 @@
     margin-right: 20px;
     margin-top: 20px;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    #section {
+      align-items: center;
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
