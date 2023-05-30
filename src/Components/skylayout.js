@@ -5,10 +5,10 @@ import '../index.css';
 function skylayout() {
   const skyBackgroundStyle = {
     position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
+    // top: 0,
+    // left: 0,
+    // width: '100%',
+    // height: '100%',
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     zIndex: -1,

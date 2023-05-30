@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Form, Input, Button } from "antd";
 
 function Checkout(props) {
   const { setCart } = props;
@@ -23,12 +22,14 @@ function Checkout(props) {
   };
 
   return (
-    <div className="Checkout">
+    <div className="Checkout" id="box2">
       <section>
         <h1>Checkout</h1>
-        <Form onFinish={userEntry}>
-          <Form.Item label="First Name">
-            <Input
+        <form onSubmit={userEntry}>
+          <label>
+            First Name
+            <br />
+            <input
               value={firstName}
               onChange={(event) => setFirstName(event.target.value)}
               id="first-name"
@@ -36,9 +37,11 @@ function Checkout(props) {
               type="text"
               placeholder="Your name..."
             />
-          </Form.Item>
-          <Form.Item label="Last Name">
-            <Input
+          </label>
+          <label>
+            Last Name
+            <br />
+            <input
               value={lastName}
               onChange={(event) => setLastName(event.target.value)}
               id="last-name"
@@ -46,27 +49,32 @@ function Checkout(props) {
               type="text"
               placeholder="Your last name..."
             />
-          </Form.Item>
-          <Form.Item label="Email">
-            <Input
+          </label>
+          <label>
+            Email
+            <br />
+            <input
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               id="email"
               name="email"
               type="text"
             />
-          </Form.Item>
-          <Form.Item label="Zip Code">
-            <Input
+          </label>
+          <label>
+            Zip Code
+            <br />
+            <input
               value={zipCode}
               onChange={(event) => setZipCode(event.target.value)}
               id="zip"
               name="zip"
               type="number"
             />
-          </Form.Item>
-          <Button type="primary" htmlType="submit">Submit</Button>
-        </Form>
+          </label>
+          <br />
+          <input type="submit" text="Submit" />
+        </form>
       </section>
     </div>
   );
