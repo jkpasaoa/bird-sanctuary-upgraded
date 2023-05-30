@@ -13,8 +13,7 @@ function App() {
 
   return (
     <div className="app">
-      <skylayout /> {/* Add the SkyLayout component as the first child */}
-
+      <skylayout />
       <div className="main">
         <section>
           <BirdCart

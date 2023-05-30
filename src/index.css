@@ -45,3 +45,32 @@
   /* (315deg, #0e512f 0%, #5c595f 74%); */
   border: solid #FBFBEE;
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+  .birdcard-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Cart {
+    width: 15em;
+  }
+
+  .Checkout {
+    width: 14em;
+  }
+}
+
+@media (max-width: 480px) {
+  .birdcard-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Cart {
+    width: 12em;
+  }
+
+  .Checkout {
+    width: 12em;
+  }
+}
