@@ -38,7 +38,7 @@ function Checkout(props) {
             />
           </Form.Item>
           <Form.Item label="Last Name">
-            <input
+            <Input
               value={lastName}
               onChange={(event) => setLastName(event.target.value)}
               id="last-name"

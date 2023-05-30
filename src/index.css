@@ -17,11 +17,12 @@
 .Checkout {
   position: fixed;
   top: 15px;
-  bottom: 20px;
-  right: 20px;
-  width: 17em;
+  bottom: 250px;
+  right: 45px;
+  width: 18em;
   border: 2px solid;
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 13px;
   transition: bottom 0.3s ease;
   background-image: linear-gradient(to bottom, #FBFBEE, #1B393A);
   border: solid #143531;
@@ -67,10 +68,12 @@
   }
 
   .Cart {
-    width: 12em;
+    /* width: 12em; */
+    width: 15em;
   }
 
   .Checkout {
-    width: 12em;
+    /* width: 12em; */
+    width: 15em;
   }
 }

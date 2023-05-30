@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../assets/trees.jpeg';
+import backgroundImage from '../assets/forestytrees.jpg'
 import '../index.css';
 
 function skylayout() {
