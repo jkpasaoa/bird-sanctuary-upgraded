@@ -7,6 +7,7 @@ import birdData from "./data/birds.js";
 import bonusItems from "./data/bonusItems.js";
 
 import "./App.css";
+import "./index.css"
 
 function App() {
   const [cart, setCart] = useState([]);
